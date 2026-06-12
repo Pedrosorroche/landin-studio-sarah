@@ -1,15 +1,18 @@
 <script setup>
 const whatsapp =
   'https://wa.me/5561996595299?text=Olá! Quero agendar um horário no Studio Sarah Sorroche.'
+const instagram = 'https://www.instagram.com/studiosarahsorroche_/'
+const hsSistemas = 'https://hssistemasesolucoes.com.br'
 </script>
 
 <template>
-  <div class="bg-[#F8F4EC] text-[#2B2620]">
-    <section class="relative min-h-screen overflow-hidden bg-[#F7F3EE]">
+  <main id="inicio" class="bg-[#F8F4EC] text-[#2B2620]">
+    <section class="relative min-h-screen overflow-hidden bg-[#F7F3EE]" aria-labelledby="hero-title">
       <div class="absolute inset-0 hidden md:block">
         <div class="absolute inset-y-0 right-0 w-[58%] overflow-hidden">
           <img src="/hero-sarah.jpg" class="h-full w-full object-cover object-[52%_center]"
-            alt="Sarah Sorroche, especialista em lash e brow" />
+            alt="Sarah Sorroche segurando pinças para atendimento de lash e brow" width="2268" height="2268"
+            fetchpriority="high" decoding="async" />
         </div>
 
         <div
@@ -21,7 +24,7 @@ const whatsapp =
 
       <header class="relative z-20 px-6 py-7 md:px-16">
         <div class="flex items-center justify-between">
-          <div class="inline-flex flex-col items-center">
+          <a href="#inicio" class="inline-flex flex-col items-center" aria-label="Sarah Sorroche Lash e Brow">
             <p class="font-serif text-3xl leading-none text-[#A97927] md:text-[42px]">
               Sarah Sorroche
             </p>
@@ -29,9 +32,10 @@ const whatsapp =
             <p class="mt-2 text-[10px] font-semibold uppercase tracking-[0.48em] text-[#B88A44]">
               Lash • Brow
             </p>
-          </div>
+          </a>
 
           <a :href="whatsapp"
+            aria-label="Agendar atendimento pelo WhatsApp"
             class="rounded-full border-2 border-[#B88A44] bg-[#D6B36A] px-8 py-3 text-sm font-bold text-[#17130F] shadow-[0_16px_34px_rgba(80,57,22,.22)] transition hover:border-[#A97927] hover:bg-[#C79A3E] hover:text-white">
             Agendar
           </a>
@@ -44,7 +48,7 @@ const whatsapp =
             Luxo • Acolhimento • Transformação
           </p>
 
-          <h1 class="max-w-3xl font-serif text-5xl leading-[0.92] text-[#241F1A] md:text-7xl xl:text-8xl">
+          <h1 id="hero-title" class="max-w-3xl font-serif text-5xl leading-[0.92] text-[#241F1A] md:text-7xl xl:text-8xl">
             Seu olhar merece esse cuidado.
           </h1>
 
@@ -55,6 +59,7 @@ const whatsapp =
 
           <div class="mt-10 flex flex-col gap-4 sm:flex-row">
             <a :href="whatsapp"
+              aria-label="Agendar atendimento no Studio Sarah Sorroche pelo WhatsApp"
               class="inline-flex justify-center rounded-full bg-[#D6B36A] px-10 py-5 font-semibold text-[#17130F] shadow-[0_18px_35px_rgba(184,138,68,.25)] transition hover:scale-[1.02]">
               Agendar atendimento
             </a>
@@ -68,21 +73,23 @@ const whatsapp =
 
         <div class="relative h-[56svh] overflow-hidden md:hidden">
           <img src="/hero-sarah.jpg" class="h-full w-full object-cover object-[50%_18%]"
-            alt="Sarah Sorroche, especialista em lash e brow" />
+            alt="Sarah Sorroche segurando pinças para atendimento de lash e brow" width="2268" height="2268"
+            fetchpriority="high" decoding="async" />
 
           <div class="absolute inset-0 bg-gradient-to-t from-[#F7F3EE] via-transparent to-transparent" />
         </div>
       </div>
     </section>
 
-    <section class="px-6 py-28 md:px-16 md:py-36">
+    <section class="px-6 py-28 md:px-16 md:py-36" aria-labelledby="sobre-title">
       <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[0.95fr_1.05fr]">
         <div class="relative order-2 md:order-1">
           <div class="absolute inset-0 translate-x-5 translate-y-5 rounded-[40px] bg-[#E8DED0]" />
 
           <img src="/sobre-sarah.jpg"
             class="relative aspect-[4/5] w-full rounded-[40px] object-cover object-center shadow-[0_40px_80px_rgba(0,0,0,.10)]"
-            alt="Sarah Sorroche" />
+            alt="Sarah Sorroche, especialista em lash lifting, brow lamination e design de sobrancelhas"
+            width="2268" height="2268" loading="lazy" decoding="async" />
         </div>
 
         <div class="order-1 md:order-2">
@@ -90,7 +97,7 @@ const whatsapp =
             Sobre
           </p>
 
-          <h2 class="max-w-3xl font-serif text-4xl leading-tight md:text-6xl">
+          <h2 id="sobre-title" class="max-w-3xl font-serif text-4xl leading-tight md:text-6xl">
             Técnica, delicadeza e cuidado em cada detalhe.
           </h2>
 
@@ -109,11 +116,12 @@ const whatsapp =
       </div>
     </section>
 
-    <section class="bg-[#15120F] px-6 py-28 text-white md:px-16 md:py-36">
+    <section class="bg-[#15120F] px-6 py-28 text-white md:px-16 md:py-36" aria-labelledby="experiencia-title">
       <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[1.1fr_.9fr]">
         <div class="overflow-hidden rounded-[40px]">
           <img src="/atendimento-sarah.jpg" class="h-full w-full object-cover"
-            alt="Atendimento no Studio Sarah Sorroche" />
+            alt="Atendimento de lash e brow no Studio Sarah Sorroche" width="3024" height="3024"
+            loading="lazy" decoding="async" />
         </div>
 
         <div>
@@ -121,7 +129,7 @@ const whatsapp =
             Experiência
           </p>
 
-          <h2 class="font-serif text-4xl leading-tight md:text-6xl">
+          <h2 id="experiencia-title" class="font-serif text-4xl leading-tight md:text-6xl">
             Um momento reservado para cuidar de você.
           </h2>
 
@@ -152,23 +160,24 @@ const whatsapp =
       </div>
     </section>
 
-    <section id="servicos" class="bg-white px-6 py-28 md:px-16 md:py-36">
+    <section id="servicos" class="bg-white px-6 py-28 md:px-16 md:py-36" aria-labelledby="servicos-title">
       <div class="mx-auto max-w-7xl">
         <div class="mb-16 max-w-3xl">
           <p class="mb-5 text-xs font-semibold uppercase tracking-[0.45em] text-[#B88A44]">
             Serviços
           </p>
 
-          <h2 class="font-serif text-4xl leading-tight md:text-6xl">
+          <h2 id="servicos-title" class="font-serif text-4xl leading-tight md:text-6xl">
             Procedimentos para realçar seu olhar.
           </h2>
         </div>
 
         <div class="grid gap-8 md:grid-cols-3">
-          <div class="group">
+          <article class="group">
             <div class="aspect-[4/5] overflow-hidden rounded-[32px] bg-[#EEE3D6]">
               <img src="/servico-lash.jpg"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-105" alt="Lash lifting" />
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                alt="Resultado natural de lash lifting" width="2268" height="2268" loading="lazy" decoding="async" />
             </div>
             <p class="mt-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#B88A44]">
               Cílios
@@ -177,13 +186,14 @@ const whatsapp =
             <p class="mt-3 text-[#6D655C]">
               Curvatura natural, leveza e elegância sem extensões.
             </p>
-          </div>
+          </article>
 
-          <div class="group">
+          <article class="group">
             <div class="aspect-[4/5] overflow-hidden rounded-[32px] bg-[#E8D6BF]">
               <img src="/servico-brow.jpg"
                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                alt="Brow lamination" />
+                alt="Resultado de brow lamination com sobrancelhas alinhadas" width="2268" height="2268"
+                loading="lazy" decoding="async" />
             </div>
             <p class="mt-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#B88A44]">
               Brow
@@ -192,13 +202,14 @@ const whatsapp =
             <p class="mt-3 text-[#6D655C]">
               Sobrancelhas alinhadas, sofisticadas e com mais presença.
             </p>
-          </div>
+          </article>
 
-          <div class="group">
+          <article class="group">
             <div class="aspect-[4/5] overflow-hidden rounded-[32px] bg-[#D9C3A6]">
               <img src="/servico-design.jpg"
                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                alt="Design de sobrancelhas" />
+                alt="Design de sobrancelhas com acabamento natural" width="2268" height="2268" loading="lazy"
+                decoding="async" />
             </div>
             <p class="mt-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#B88A44]">
               Design
@@ -207,24 +218,43 @@ const whatsapp =
             <p class="mt-3 text-[#6D655C]">
               Harmonia, definição e acabamento pensado para o seu rosto.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="bg-[#211C18] px-6 py-28 text-center text-white md:py-36">
+    <section class="bg-[#211C18] px-6 py-28 text-center text-white md:py-36" aria-labelledby="agendamento-title">
       <p class="mb-5 text-xs font-semibold uppercase tracking-[0.45em] text-[#D6B36A]">
         Studio Sarah Sorroche
       </p>
 
-      <h2 class="mx-auto max-w-4xl font-serif text-4xl leading-tight md:text-6xl">
+      <h2 id="agendamento-title" class="mx-auto max-w-4xl font-serif text-4xl leading-tight md:text-6xl">
         Pronta para viver sua transformação?
       </h2>
 
       <a :href="whatsapp"
+        aria-label="Agendar atendimento agora pelo WhatsApp"
         class="mt-10 inline-flex rounded-full bg-[#D6B36A] px-10 py-5 font-medium text-black transition hover:scale-[1.02]">
         Agendar agora
       </a>
     </section>
-  </div>
+
+    <footer class="bg-[#15120F] px-6 py-8 text-sm text-white/60 md:px-16">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <a :href="instagram" target="_blank" rel="noopener noreferrer"
+          class="font-medium text-white/75 transition hover:text-[#D6B36A]"
+          aria-label="Instagram do Studio Sarah Sorroche">
+          @studiosarahsorroche_
+        </a>
+
+        <p>
+          Site desenvolvido por
+          <a :href="hsSistemas" target="_blank" rel="noopener noreferrer"
+            class="font-medium text-white/75 transition hover:text-[#D6B36A]">
+            HS Sistemas e Soluções
+          </a>
+        </p>
+      </div>
+    </footer>
+  </main>
 </template>
