@@ -10,9 +10,13 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
     <section class="relative min-h-screen overflow-hidden bg-[#F7F3EE]" aria-labelledby="hero-title">
       <div class="absolute inset-0 hidden md:block">
         <div class="absolute inset-y-0 right-0 w-[58%] overflow-hidden">
-          <img src="/hero-sarah.jpg" class="h-full w-full object-cover object-[52%_center]"
-            alt="Sarah Sorroche segurando pinças para atendimento de lash e brow" width="2268" height="2268"
-            fetchpriority="high" decoding="async" />
+          <picture class="block h-full w-full">
+            <source type="image/webp" srcset="/hero-sarah-900.webp 900w, /hero-sarah-1400.webp 1400w"
+              sizes="58vw" />
+            <img src="/hero-sarah.jpg" class="h-full w-full object-cover object-[52%_center]"
+              alt="Sarah Sorroche segurando pinças para atendimento de lash e brow" width="1400" height="1400"
+              fetchpriority="high" decoding="async" />
+          </picture>
         </div>
 
         <div
@@ -26,9 +30,9 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
         <div class="flex items-center justify-between">
           <a href="#inicio" class="inline-flex min-w-0 items-center gap-2.5 md:gap-4"
             aria-label="Studio Sarah Sorroche Lash e Brow">
-            <img src="/monograma-ss.png"
+            <img src="/monograma-ss-128.webp"
               class="h-11 w-11 shrink-0 rounded-full object-cover shadow-[0_12px_28px_rgba(80,57,22,.18)] md:h-16 md:w-16"
-              alt="" width="512" height="512" fetchpriority="high" decoding="async" />
+              alt="" width="128" height="128" fetchpriority="high" decoding="async" />
 
             <span class="flex flex-col">
               <span class="text-[10px] font-semibold uppercase leading-none tracking-[0.46em] text-[#B88A44] md:text-xs">
@@ -78,24 +82,31 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
         </div>
 
         <div class="relative h-[56svh] overflow-hidden md:hidden">
-          <img src="/hero-sarah.jpg" class="h-full w-full object-cover object-[50%_18%]"
-            alt="Sarah Sorroche segurando pinças para atendimento de lash e brow" width="2268" height="2268"
-            fetchpriority="high" decoding="async" />
+          <picture class="block h-full w-full">
+            <source type="image/webp" srcset="/hero-sarah-900.webp 900w, /hero-sarah-1400.webp 1400w"
+              sizes="100vw" />
+            <img src="/hero-sarah.jpg" class="h-full w-full object-cover object-[50%_18%]"
+              alt="Sarah Sorroche segurando pinças para atendimento de lash e brow" width="900" height="900"
+              fetchpriority="high" decoding="async" />
+          </picture>
 
           <div class="absolute inset-0 bg-gradient-to-t from-[#F7F3EE] via-transparent to-transparent" />
         </div>
       </div>
     </section>
 
-    <section class="px-6 py-28 md:px-16 md:py-36" aria-labelledby="sobre-title">
+    <section class="section-deferred px-6 py-28 md:px-16 md:py-36" aria-labelledby="sobre-title">
       <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[0.95fr_1.05fr]">
         <div class="relative order-2 md:order-1">
           <div class="absolute inset-0 translate-x-5 translate-y-5 rounded-[40px] bg-[#E8DED0]" />
 
-          <img src="/sobre-sarah.jpg"
-            class="relative aspect-[4/5] w-full rounded-[40px] object-cover object-center shadow-[0_40px_80px_rgba(0,0,0,.10)]"
-            alt="Sarah Sorroche, especialista em lash lifting, brow lamination e design de sobrancelhas"
-            width="2268" height="2268" loading="lazy" decoding="async" />
+          <picture class="block">
+            <source type="image/webp" srcset="/sobre-sarah-800.webp 800w" sizes="(min-width: 768px) 45vw, 100vw" />
+            <img src="/sobre-sarah.jpg"
+              class="relative aspect-[4/5] w-full rounded-[40px] object-cover object-center shadow-[0_40px_80px_rgba(0,0,0,.10)]"
+              alt="Sarah Sorroche, especialista em lash lifting, brow lamination e design de sobrancelhas"
+              width="800" height="800" loading="lazy" decoding="async" fetchpriority="low" />
+          </picture>
         </div>
 
         <div class="order-1 md:order-2">
@@ -122,12 +133,16 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
       </div>
     </section>
 
-    <section class="bg-[#15120F] px-6 py-28 text-white md:px-16 md:py-36" aria-labelledby="experiencia-title">
+    <section class="section-deferred bg-[#15120F] px-6 py-28 text-white md:px-16 md:py-36" aria-labelledby="experiencia-title">
       <div class="mx-auto grid max-w-7xl items-center gap-16 md:grid-cols-[1.1fr_.9fr]">
         <div class="overflow-hidden rounded-[40px]">
-          <img src="/atendimento-sarah.jpg" class="h-full w-full object-cover"
-            alt="Atendimento de lash e brow no Studio Sarah Sorroche" width="3024" height="3024"
-            loading="lazy" decoding="async" />
+          <picture class="block h-full w-full">
+            <source type="image/webp" srcset="/atendimento-sarah-1000.webp 1000w"
+              sizes="(min-width: 768px) 52vw, 100vw" />
+            <img src="/atendimento-sarah.jpg" class="h-full w-full object-cover"
+              alt="Atendimento de lash e brow no Studio Sarah Sorroche" width="1000" height="1000"
+              loading="lazy" decoding="async" fetchpriority="low" />
+          </picture>
         </div>
 
         <div>
@@ -166,7 +181,7 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
       </div>
     </section>
 
-    <section id="servicos" class="bg-white px-6 py-28 md:px-16 md:py-36" aria-labelledby="servicos-title">
+    <section id="servicos" class="section-deferred bg-white px-6 py-28 md:px-16 md:py-36" aria-labelledby="servicos-title">
       <div class="mx-auto max-w-7xl">
         <div class="mb-16 max-w-3xl">
           <p class="mb-5 text-xs font-semibold uppercase tracking-[0.45em] text-[#B88A44]">
@@ -186,9 +201,14 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
         <div class="grid gap-8 md:grid-cols-3">
           <article class="group">
             <div class="aspect-[4/5] overflow-hidden rounded-[32px] bg-[#EEE3D6]">
-              <img src="/servico-lash.jpg"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                alt="Resultado natural de extensão de cílios" width="2268" height="2268" loading="lazy" decoding="async" />
+              <picture class="block h-full w-full">
+                <source type="image/webp" srcset="/servico-lash-700.webp 700w"
+                  sizes="(min-width: 768px) 30vw, 100vw" />
+                <img src="/servico-lash.jpg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  alt="Resultado natural de extensão de cílios" width="700" height="700" loading="lazy"
+                  decoding="async" fetchpriority="low" />
+              </picture>
             </div>
             <p class="mt-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#B88A44]">
               Cílios
@@ -202,10 +222,14 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
 
           <article class="group">
             <div class="aspect-[4/5] overflow-hidden rounded-[32px] bg-[#E8D6BF]">
-              <img src="/servico-brow.jpg"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                alt="Resultado de brow lamination com sobrancelhas alinhadas" width="2268" height="2268"
-                loading="lazy" decoding="async" />
+              <picture class="block h-full w-full">
+                <source type="image/webp" srcset="/servico-brow-700.webp 700w"
+                  sizes="(min-width: 768px) 30vw, 100vw" />
+                <img src="/servico-brow.jpg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  alt="Resultado de brow lamination com sobrancelhas alinhadas" width="700" height="646"
+                  loading="lazy" decoding="async" fetchpriority="low" />
+              </picture>
             </div>
             <p class="mt-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#B88A44]">
               Brow
@@ -219,10 +243,14 @@ const hsSistemas = 'https://hssistemasesolucoes.com.br'
 
           <article class="group">
             <div class="aspect-[4/5] overflow-hidden rounded-[32px] bg-[#D9C3A6]">
-              <img src="/servico-design.jpg"
-                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                alt="Design de sobrancelhas com acabamento natural" width="2268" height="2268" loading="lazy"
-                decoding="async" />
+              <picture class="block h-full w-full">
+                <source type="image/webp" srcset="/servico-design-700.webp 700w"
+                  sizes="(min-width: 768px) 30vw, 100vw" />
+                <img src="/servico-design.jpg"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  alt="Design de sobrancelhas com acabamento natural" width="700" height="682" loading="lazy"
+                  decoding="async" fetchpriority="low" />
+              </picture>
             </div>
             <p class="mt-6 text-xs font-semibold uppercase tracking-[0.35em] text-[#B88A44]">
               Design
